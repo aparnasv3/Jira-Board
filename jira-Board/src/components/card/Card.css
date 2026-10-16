@@ -1,0 +1,19 @@
+.Section-Card{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 10px;
+    width: 350px;
+    text-align: left;
+}
+
+.Section-Card-Tag{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.Section-Card-Tag #tag{
+    display: flex;
+    margin: 5px;
+    gap: 2px;
+}
