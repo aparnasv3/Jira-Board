@@ -14,3 +14,11 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  
+  <!--my notes  -->
+  #Logic for Drag and drop
+ - drage karny sathi apn ithe dragable vaprt ahot va adhi kont kard drage krych ahe te shodla ahe ie. tycha index kay ahe te ghetla
+ - v to eka state variable madhe save kela .
+ - then aplyal drage area pahije kuthe drage krych ahe to area decide krycha ahe ,
+ - then at which point we are moving
+ - then in which category we moving te.
