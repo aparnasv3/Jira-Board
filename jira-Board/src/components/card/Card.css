@@ -17,3 +17,15 @@
     margin: 5px;
     gap: 2px;
 }
+.deleteImg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.deleteImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

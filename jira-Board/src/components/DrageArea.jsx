@@ -1,20 +1,26 @@
-import React, { useState } from 'react'
-import './DrageArea.css'
+import React, { useState } from "react";
+import "./DrageArea.css";
 
-const DrageArea = () => {
-  const[showArea , setShowArea] =useState(false)
+const DrageArea = ({ onDrop }) => {
+  const [showArea, setShowArea] = useState(false);
   return (
-    <div className = {showArea ? 'show-box' :'hide-box'} 
-    onDragEnter={()=>{
-      setShowArea(true)
-    }}
-    onDragLeave={()=>{
-      setShowArea(false)
-    }}
+    <div
+      className={showArea ? "show-box" : "hide-box"}
+      onDragEnter={() => {
+        setShowArea(true);
+      }}
+      onDragLeave={() => {
+        setShowArea(false);
+      }}
+      onDrop={() => {
+        onDrop();
+        setShowArea(false);
+      }}
+      onDragOver={(e) => e.preventDefault()}
     >
-      drop Area here
+      Drop Area
     </div>
-  )
-}
+  );
+};
 
-export default DrageArea
+export default DrageArea;

@@ -38,6 +38,12 @@ const [task,setTask]= useState({
      setTaskArray((prev)=>{
       return [...prev, task]
      });
+
+      setTask({
+      task:'',
+      status:"Ready for Development",
+      tags:[]
+     })
   }   
 console.log(task)
 
@@ -45,7 +51,7 @@ console.log(task)
     
       <header className='app_header'>
     <form onSubmit={handleSubmit}>
-       <input type='text' placeholder='Enter Task Details' name='task' onChange={handleChange}></input>
+       <input type='text' placeholder='Enter Task Details' name='task' value={task.task} onChange={handleChange}></input>
       
        <div className='head_bottom'>
        
@@ -56,7 +62,7 @@ console.log(task)
         </div>
 
         <div>
-          <select className='select-Opt' name='status' onChange={handleChange}>
+          <select className='select-Opt' name='status' value={task.status} onChange={handleChange}>
             <option value="Ready for Development">Ready for Development</option>
             <option value="In Progress">In Progress</option>
             <option value="Ready for test">Ready for test</option>
